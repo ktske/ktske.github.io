@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    background-color: #3B6A57;
+    padding: 1.5rem 3rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+nav a {
+    color: #E6E6FA;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+main {
+    flex: 1;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    max-width: 200px;
+    height: auto;
+}
+
+.name {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+    margin-top: 8rem;
+    text-align: left;
+    color: #708090;
+}
+
+.description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+    color: #708090;
+}
+
+
+
+
+footer {
+    background-color: #3B6A57;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 1024px) {
+    .logo {
+        max-width: 150px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 120px;
+    }
+}

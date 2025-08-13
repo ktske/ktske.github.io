@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    background-color: #3B6A57;
+    padding: 1.5rem 3rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+nav a {
+    color: #E6E6FA;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+
+main {
+    flex: 1;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.about-main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #708090;
+}
+
+
+.logo-box {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+
+.bio {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.bio-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #708090;
+}
+
+
+.programs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.program-box {
+    flex: 1 1 30%;
+    max-width: 180px;
+    text-align: center;
+}
+
+.program-box img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background-color: #3B6A57;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    .bio {
+        flex-direction: column;
+    }
+
+    .program-box {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-box {
+        flex: 1 1 100%;
+    }
+}
